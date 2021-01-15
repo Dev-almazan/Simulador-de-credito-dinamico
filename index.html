@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="ERNESTO ALMAZAN RESENDIZ">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>SIMULADOR DE CREDITO</title>
+    
+    <link rel="stylesheet"  href="css/estilo.css">
+    
+</head>
+
+<body class="bg-gradient-light">
+
+  <div class="container">
+
+   
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+      
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image">
+                
+                
+                </div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                <h2 class="text-center text-success">Solicita tu  crédito</h2><hr>
+                  <small class="text-center" >La tasa de interes promedio es del <span class ="text-success">3.5% </span>mensual. </small><br>    
+            <div id="solicitud">
+                
+              <div class="col-md"><br>
+            <label>Plazo de crédito</label>   
+           <select class="form-control" id="valorb" onclick="mostrar()"  >
+            <option value="1"  >- Selecciona -</option>
+                    <option value="3">3 MESES</option>
+                    <option value="6">6 MESES </option>
+                    <option value="9">9 MESES</option>
+                    <option value="12">12 MESES</option>
+                <option value="18">18 MESES</option>
+                    <option value="24">24 MESES</option>
+                    <option value="36">36 MESES</option>
+           </select> 
+           <small>* Ingrese plazo de crédito</small>
+                    </div>  <br>
+                
+                        
+        <div class="col-md ">
+ 
+            <h4 class="text-center" style="display: none;" id="mostrar">Necesito  <span id="r" class="text-success"></span> pesos </h4>
+        <input type="range"  class="form-control"  id="valora"    min="5000" max="50000" value="0"  />
+        <small>* Seleccione importe de crédito</small>
+        </div>   
+  
+                        </div>
+                </div>
+              
+                 
+                    
+                <div id="info" style="display: none;" class="contenido">
+                <p class="text-center">Tu crédito seria por   <span id="resultado" class="text-success"></span> pesos </p>
+                        
+                <p class="text-center">Con un pago  mensual de  <span id="mensualidades" class="text-success">  </span> pesos mexicanos </p>
+                          
+                <p class="text-center">A un plazo de <span id="meses" class="text-success"></span> meses. </p>
+                            
+                 <center>        
+                <button type="submit"  class="btn btn-success">Solicitar crédito ahora</button> <hr>   
+                </center>
+                            </div> 
+                </div>
+                  
+            
+        </div>
+
+                         
+              
+              
+      </div>
+
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/logica.js"></script>
+</body>
+</html>
